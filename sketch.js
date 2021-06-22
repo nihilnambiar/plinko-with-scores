@@ -67,10 +67,11 @@ function draw() {
   if(particle!=null){
     particle.display();
     if(particle.body.position.y>760){
-      if(particle.body.position.x<300)(
+      if(particle.body.position.x<300){
         score=score+500
-       particle=null;
-      )
+        particle=null
+      
+    }
     }
   }
   if(count>=5)gameState="end"
